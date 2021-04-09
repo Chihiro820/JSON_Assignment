@@ -1,0 +1,25 @@
+
+
+input{
+    display:flex;
+    padding: 1%;
+     width: 50%;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+.explain{
+    color:rgb(59, 55, 55);
+    font-size:small;
+}
+#case,#type{
+        padding: 1%;
+        width: 50%;
+        border: 1px solid #ccc; 
+}
+select{
+    margin:10px;
+}
+#info{
+    text-align:center;
+    width:20%;
+}

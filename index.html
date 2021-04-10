@@ -11,34 +11,38 @@
 </head>
 <body class="text-white">
 <div class="container">
-	<h1 class="text-center  m-5 ">COVID-19 GLOBAL STATUS</h1>
-
-	<form >
+	<h1 class="text-center  m-5 display-5 font-weight-bold">COVID-19 GLOBAL STATUS</h1>
 		<div class="continer" id="country">
 		  	<div class="row">
-				  <div class="col-md-4 mb-3">
-						<label  >Country: </label>
-						<input type="text"id="text"placeholder="Country">
-				  </div>
-				  <div class="col-md-4 mb-3">
-						<label>Choose data type: </label>
-						<select id="dataType" onChange="covid()" >
-								<option>----</option>
+						<div class="input-group col-md-4 mb-3">
+							<div class="input-group-prepend">
+								<span class="bg-dark input-group-text text-white border-secondary">Country</span>
+							</div>
+								<input class="form-control"type="text"id="text"placeholder="Country">
+				  		</div>
+				  <div class="col-md-4 mb-3 input-group">
+					  	<div class="input-group-prepend">
+							<label class="bg-dark input-group-text text-white border-secondary">Data Type</label>
+						</div>
+							<select class="custom-select text-secondary " id="dataType" onChange="covid()" >
+								<option selected>---</option>
 								<option value="Total">Total numbers</option>
 								<option value="Today">Today's numbers</option>
-						</select>
+							</select>
 				  </div>
-				  <div class="col-md-4 mb-3">
-						<label>Choose data case: </label>
-						<select id="dataCase" onChange="covid()">
-								<option>----</option>
+				  <div class="input-group col-md-4 mb-3">
+					   <div class="input-group-prepend">
+							<label class="bg-dark input-group-text text-white border-secondary">Data Case</label>
+						</div>
+						<select class="custom-select text-secondary" id="dataCase" onChange="covid()">
+								<option selected>---</option>
 								<option value="recovered">Recover</option>
 								<option value="deaths">Death</option>
 						</select>
 				  </div>
 			</div>
 		</div>
-	</form>
+	
 	<div id="output"></div>
 	<script src="js/main.js"></script>
 </div> 

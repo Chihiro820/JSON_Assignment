@@ -2,16 +2,7 @@
     margin: 0;
     padding:0;
 }
-.explain{
-    color:rgb(59, 55, 55);
-    font-size:small;
-}
-#case,
-#type,
-select,
-input {
-        border: 1px solid #ccc; 
-}
+
 body{
     background-image:url('/img/covid-19.png');
     background-repeat: no-repeat;

@@ -51,19 +51,19 @@ let result='';
       document.getElementById('output').innerHTML=`
     <div class="container">
      
-            <h1 class="country text-center mt-3">${data.country}</h1>
+            <h1 class="country text-center mt-3 font-weight-bold">${data.country}</h1>
             <img class="country_img offset-lg-4 col-lg-4" src="${data.countryInfo.flag}">
       <h4 id="datetime" class="text-center m-5"></h4>
         <div class="row">
             <div class="col-md-4 text-center">
-                <h2>Total cases<h2><h1>${data.cases}</h1>
+                <h2>Total cases<h2><h1 class="display-3 font-weight-bold">${data.cases}</h1>
             </div>
             <div class="col-md-4 text-center">
-                <h2>Confirmed cases today<h2><h1>${data.todayCases}</h1>
+                <h2>Confirmed cases today<h2><h1 class="display-3 font-weight-bold">${data.todayCases}</h1>
             </div>
             <div class="col-md-4 text-center">
                 <h2>${dataType} ${dataCase}</h2>
-                <h1>${result}</h1>
+                <h1 class="display-3 font-weight-bold">${result}</h1>
             </div>
         </div>
     </div>

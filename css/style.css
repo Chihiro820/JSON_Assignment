@@ -1,25 +1,20 @@
-
-
-input{
-    display:flex;
-    padding: 1%;
-     width: 50%;
-     border: 1px solid #ccc;
-     border-radius: 4px;
+*{
+    margin: 0;
+    padding:0;
 }
 .explain{
     color:rgb(59, 55, 55);
     font-size:small;
 }
-#case,#type{
-        padding: 1%;
-        width: 50%;
+#case,
+#type,
+select,
+input {
         border: 1px solid #ccc; 
 }
-select{
-    margin:10px;
-}
-#info{
-    text-align:center;
-    width:20%;
+body{
+    background-image:url('/img/covid-19.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
 }

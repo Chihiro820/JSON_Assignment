@@ -2,37 +2,45 @@
 <html>
 <head>
 	<title>Covid 19</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="text-white">
+<div class="container">
+	<h1 class="text-center  m-5 ">COVID-19 GLOBAL STATUS</h1>
 
-	<h1>COVID-19 GLOBAL STATUS</h1>
 	<form >
-		<div id="country">
-			<label>Countryyyy
-			</label>
-			<input type="text"id="text"placeholder="Country">
+		<div class="continer" id="country">
+		  	<div class="row">
+				  <div class="col-md-4 mb-3">
+						<label  >Country: </label>
+						<input type="text"id="text"placeholder="Country">
+				  </div>
+				  <div class="col-md-4 mb-3">
+						<label>Choose data type: </label>
+						<select id="dataType" onChange="covid()" >
+								<option>----</option>
+								<option value="Total">Total numbers</option>
+								<option value="Today">Today's numbers</option>
+						</select>
+				  </div>
+				  <div class="col-md-4 mb-3">
+						<label>Choose data case: </label>
+						<select id="dataCase" onChange="covid()">
+								<option>----</option>
+								<option value="recovered">Recover</option>
+								<option value="deaths">Death</option>
+						</select>
+				  </div>
+			</div>
 		</div>
-		<p class="explain">*You can add multible countries separated by commas</p>
-		<label>Choose data type: </label>
-		<select id="dataType" onChange="covid()" >
-				<option>----</option>
-				<option value="Total">Total numbers</option>
-				<option value="Today">Today's numbers</option>
-		</select>
-		<br>
-		<label>Choose data case: </label>
-		<select id="dataCase" onChange="covid()">
-				<option>----</option>
-				<option value="recovered">Recover</option>
-				<option value="deaths">Death</option>
-		</select>
 	</form>
-	<!-- <h3 id="datetime"></h3> -->
 	<div id="output"></div>
 	<script src="js/main.js"></script>
+</div> 
 </body>
 </html>

@@ -48,15 +48,25 @@ let result='';
     console.log(result);
 
 
-      document.getElementById('output').innerHTML=`<div id="info">
-      <h1 class="country">${data.country}</h1>
-      <img class="country_img" src="${data.countryInfo.flag}">
-      </div>
-      <h3 id="datetime"></h3>
-      <h2>Confirmed cases today<h2><h1>${data.todayCases}</h1>
-      <h2>Total cases<h2><h1>${data.cases}</h1>
-      <h2>${dataType} ${dataCase}</h2>
-      <h1>${result}</h1>
+      document.getElementById('output').innerHTML=`
+    <div class="container">
+     
+            <h1 class="country text-center mt-3">${data.country}</h1>
+            <img class="country_img offset-lg-4 col-lg-4" src="${data.countryInfo.flag}">
+      <h4 id="datetime" class="text-center m-5"></h4>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h2>Total cases<h2><h1>${data.cases}</h1>
+            </div>
+            <div class="col-md-4 text-center">
+                <h2>Confirmed cases today<h2><h1>${data.todayCases}</h1>
+            </div>
+            <div class="col-md-4 text-center">
+                <h2>${dataType} ${dataCase}</h2>
+                <h1>${result}</h1>
+            </div>
+        </div>
+    </div>
       `;console.log(result);
     }
     catch(error){
